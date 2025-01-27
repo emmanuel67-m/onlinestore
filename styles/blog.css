@@ -1,0 +1,248 @@
+.blog-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .hero {
+    width: 100%;
+    background-color: var(--gray-100);
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+  }
+  
+  .blog-content {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .featured-post {
+    margin-bottom: 2rem;
+    background-color: var(--gray-100);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .featured-post img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .featured-post-content {
+    padding: 1.5rem;
+  }
+  
+  .featured-post h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .post-meta {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .post-excerpt {
+    margin-bottom: 1rem;
+  }
+  
+  .read-more {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .read-more:hover {
+    background-color: var(--primary-color-dark);
+  }
+  
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .blog-post {
+    background-color: var(--gray-100);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .blog-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .blog-post h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin: 1rem;
+  }
+  
+  .blog-post .post-meta,
+  .blog-post .post-excerpt {
+    margin: 0 1rem 1rem;
+  }
+  
+  .blog-post .read-more {
+    margin: 0 1rem 1rem;
+  }
+  
+  .pagination {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .pagination a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    background-color: var(--gray-100);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .pagination a.active,
+  .pagination a:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .blog-sidebar {
+    flex: 0 0 300px;
+  }
+  
+  .sidebar-widget {
+    background-color: var(--gray-100);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar-widget h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar-widget ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-widget li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar-widget a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  .sidebar-widget a:hover {
+    color: var(--primary-color);
+  }
+  
+  .tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .tag-cloud a {
+    display: inline-block;
+    background-color: var(--gray-200);
+    color: var(--text-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  
+  .tag-cloud a:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .blog-page {
+      padding: 1rem;
+    }
+  
+    .hero {
+      padding: 2rem 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .featured-post h2 {
+      font-size: 1.5rem;
+    }
+  
+    .blog-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .blog-sidebar {
+      flex: 0 0 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  
+    .featured-post h2 {
+      font-size: 1.2rem;
+    }
+  
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .blog-post img {
+      height: 150px;
+    }
+  
+    .blog-post h3 {
+      font-size: 1rem;
+    }
+  
+    .pagination a {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  
